@@ -106,11 +106,34 @@
 
         .content p {
             color: #34495e;
-            font-size: 1em;
+            font-size: 1.2em;
             line-height: 1.6em;
         }
 
-        /* Link button styling */
+        ul {
+            margin: 0;
+            padding-left: 20px; /* Indent to align with content */
+            list-style-type: none;
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+            color: #34495e;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+            line-height: 1.5;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
         .button {
             display: flex;
             justify-content: center;
