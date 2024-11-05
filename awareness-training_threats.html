@@ -468,9 +468,454 @@
             <p>Mindig hivatkozz a hivatalos webhelyekre vagy azokra a közvetlen kommunikációs csatornákra, amelyeken megbízható szervezetekkel lehet kommunikálni, hogy meggyőződj az ajánlatok vagy letöltések hitelességéről.</p>
             <p>Ezek az egyszerű, de hatékony lépések segíthetnek elkerülni, hogy csalás áldozatává válj, és megóvhatják a személyes adataid és eszközeid biztonságát.</p>
 
-            <h3>Adathalászat</h3>
+            <h3> Adathalászat </h3>
+
+            <h4>Mi az adathalászat vagy phishing?</h4>
+
+            <p>Az adathalászat, más néven phishing, a kibertámadások leggyakrabban alkalmazott típusa, amely során megtévesztő e-maileket, üzeneteket vagy webhelyeket használnak, hogy hiteles forrásokat utánozzanak. A támadók célja az, hogy érzékeny adatokat, például jelszavakat, banki információkat vagy személyazonosító adatokat szerezzenek tőled.</p>
+            <p>Biztosan találkoztál már az adathalász e-mailek egyik legismertebb formájával, mint a "gazdag nigériai herceg" vagy az "Ön nyert 1 millió eurót" típusú üzenetek. Az utóbbi időben azonban a kiberbűnözők sokkal kifinomultabb módszerekkel támadnak. Olyan e-maileket kaphatsz, amelyek látszólag megbízható bankoktól vagy népszerű internetes szolgáltatásoktól származnak, és arra kérnek, hogy erősítsd meg a fiókod adatait, vagy add meg a bankkártya adataidat.</p>
+            <p>Egy tipikus adathalász támadás során a támadó előzetesen összegyűjtött információkkal küld egy gondosan megfogalmazott, hosszú e-mailt, amelyben megemlíti munkával kapcsolatos információkat, a vezetőd nevét, és sürgősséget sugall. Ezzel a taktikával a támadók azt remélik, hogy lecsökken az éberséged, nem leszel többé óvatos, és teljesíted az e-mailben szereplő kérést, például érzékenyebb információkat küldesz, mint például jelszavakat és hitelkártya adatokat, vagy sürgős kifizetést indítasz, esetleg letöltesz egy fájlt.</p>
+            <p>Az adathalász támadások népszerűsége nem véletlen, mivel ezek a módszerek egyszerűek és hatékonyak. Az F5 Labs kutatásai szerint az adathalászat felelős volt az illetéktelen behatolások 21%-áért, ami a második legnagyobb ok, amit 2019-ben az amerikai vállalatok jelentettek.</p>
+
+            <h4>Milyen különböző típusai vannak az adathalászatnak?</h4>
+
+            <p>Az adathalászatnak több különböző típusa létezik, amelyeket a támadók különböző stratégiákkal alkalmaznak a céljaik elérésére.
+
+            <h5>Email adathalászat</h5>
+
+            <p>Ez a legelterjedtebb forma, amikor a támadók olyan e-maileket küldenek neked, amelyek látszólag egy megbízható vállalkozástól, például egy banktól származnak. Ezek az üzenetek arra próbálnak rávenni, hogy kattints egy linkre, ahol adatokat kell megadnod, vagy nyiss meg egy rosszindulatú programot tartalmazó csatolmányt.</p>
+
+            <h5>Spear phishing</h5>
+
+            <p>Ez a típus sokkal célzottabb és kifinomultabb. A támadók rólad gyűjtenek össze személyes adatokat, például a teljes nevedet, a munkahelyedet vagy a munkahelyi címedet, sőt, néha még konkrét információkat is a munkakörödről. A személyre szabott üzenetek célja, hogy megbízhatóbbnak tűnjenek, így könnyebben rávihessenek, hogy érzékeny adatokat adj meg.</p>
+
+            <h5>Whaling / Bálnavadászat</h5>
+
+            <p>A Whaling olyan támadás, amely a vezető beosztású alkalmazottakat, a vállalatnál magasabb pozícióban lévő embereket célozza meg. A bálnavadászat célja ugyanaz, mint bármely más adathalász-támadásé. A támadók gyakran személyes vagy vállalati információkat gyűjtenek össze a célpontokról, hogy az üzenetek hitelesebbnek tűnjenek. Az e-mail úgy tűnik, mintha hiteles forrásból érkezett volna, és akár vállalati logókat vagy egy csalárd weboldalra mutató linkeket is tartalmazhat, amelyeket szintén úgy alakítottak ki, hogy legitimnek tűnjenek. Minél több kutatást végeznek a támadók, annál személyre szabottabb és meggyőzőbb lehet az üzenet.</p>
+            <p>Például, ha egy vállalat nyilvánosan megosztja a karácsonyi bulin készült fotókat a közösségi médiában, például LinkedIn-en a támadók ezt kihasználhatják: "Szia Tamás, itt István – múlt csütörtökön igazán jól sikerült a karácsonyi party! Remélem, sikerült kiszedned azt a zsírfoltot a piros ingedből!"</p>
+            <p>Ez a személyre szabott üzenet könnyen megtéveszthet, mivel hitelesnek tűnik, és egy ismerős helyzetre hivatkozik.</p>
+
+            <h5>Vishing</h5>
+
+            <p>A vishing a telefonos adathalászat egy formája, amely során a támadók telefonon keresztül próbálnak érzékeny adatokat kicsalni az áldozatokból. A vishing során a módszer hasonló a hagyományos adathalászathoz, de itt a manipuláció telefonos beszélgetés során történik.</p>
+            <p>A támadók hamis hívóazonosítót használnak, hogy a telefonhívások úgy tűnjenek, mintha megbízható forrásból származnának és gyakran manipulálják a hangjukat, hogy hitelesebbnek tűnjenek. A vishing során a támadók pretexting technikát alkalmaznak, amikor hamis forgatókönyveket állítanak fel. Például banki tisztviselőnek, kormányzati szervnek vagy közüzemi szolgáltatónak adhatják ki magukat, hogy nyomást gyakoroljanak az áldozatokra, és érzékeny adatok megosztására, vagy rosszindulatú szoftverek letöltésére bírják őket. Néha elegendő, ha megemlítik az "IT" varázsszót, és máris sokan bármit megtesznek.</p>
+            <p>Például előfordulhat, hogy azt mondják, hogy olyan kritikus problémád van, amely azonnali figyelmet igényel. Ekkor küldhetnek egy QR-kódot vagy linket egy hamis weboldalra, ahonnan letölthetsz egy "frissítést", ami valószínűleg kártékony kódot tartalmaz. Esetleg arra kérhetnek, hogy telepíts egy távoli hozzáférést biztosító alkalmazást, mint az AnyDesk, ami lehetővé teszi számukra, hogy távolról hozzáférjenek a számítógépedhez. Ha ezt engedélyezed, elveszted az irányítást a laptopod felett, és a támadók akár utalásokat is indíthatnak a nevedben, amíg te be vagy jelentkezve a bankfiókodba. A folyamatot csak az internet elérésének megszakításával vagy a számítógép teljes leállításával szakíthatod meg.</p>
+
+            <h5>Smishing</h5>
+
+            <p>Az SMS adathalászat, más néven smishing, olyan módszer, amely mobil SMS-üzeneteket használ a támadások végrehajtására. Ezek az üzenetek gyakran sürgős cselekvésre ösztönöznek, például linkekre való kattintásra vagy információk megadására.</p>
+
+            <P><b>Eredet és a FLUBOT</b></p>
+
+            <p>A smishing (SMS adathalászat) első esetei a 2000-es évek közepére nyúlnak vissza, de a FluBot-támadás a legismertebb példa volt, amely 2020 decemberében jelent meg. Ez a rosszindulatú program elsősorban Android eszközökön terjedt SMS-ben, de az iPhone felhasználói is kaptak fertőzött linkeket. Az üzenetek arra kérték a felhasználókat, hogy kattintsanak egy linkre, amely egy csomagküldés nyomon követésére vagy egy hamis hangpostaüzenet meghallgatására szolgáló alkalmazás telepítéséhez volt szükséges. A telepítés után az alkalmazás hozzáférési engedélyeket kért, amelyeket a hackerek személyes adatok ellopására és a beépített biztonsági mechanizmusok kikapcsolására használhattak fel.</p>
+            <p>Példa SMS üzenetre és hamis DHL alkalmazásra, amely a FluBot kártevőt tartalmazza:</p>
+
+            <img>
+            <img>
+
+            <p>Itt pedig pár példa a hangüzenetre utaló üzenetről, valamint egy kép, amely megmutatja, hogy mi jelenik meg azoknak az ügyfeleknek, akik rákattintanak az egyik új üzenetváltozatban található linkre:</p>
+
+            <img>
+            <img>
+
+            <p>A lenti diagram bemutatja, a fertőzés általános menetét:</p>
+
+            <img>
+
+            <p>Az üzeneteket rendszeresen frissítették, több mint 40 változatban jelentek meg, és számos nagyvállalat (pl. Amazon, DHL) nevében érkeztek. Ha valaki Android telefont használt, a kattintás után egy olyan oldalra jutott, amely magyarázatot adott a rosszindulatú szoftver telepítésére.</p>
+            <p>A rosszindulatú program miután adminisztrátori jogokat szerzett az áldozat telefonján, végrehajthatta az alábbi műveletek legalább egyikét:</p>
+            <ul>
+                <li>Hozzáfért az érintett eszközön található, rendkívül érzékeny személyes adatokhoz</li>
+                <li>SMS-eket küldött a telefon névjegyzékében szereplő személyeknek, ezzel hihetővé téve az üzenetet</li>
+                <li>További adathalász támadásokhoz vezetett, azaz az áldozatokat további külső adathalász webhelyekre irányította</li>
+                <li>Lehallgatta a telefonra küldött SMS-eket, hogy megszerezze a harmadik felek által elküldött egyszeri jelszavakat (például bankok), és ellopta más érzékeny hitelesítő adatokat (beleértve a Bitcoin-tárcákat)</li>
+                <li>Spyware-t használt a telefonon tárolt, onnan elküldött vagy a telefonon kapott érzékeny adatok gyűjtésére</li>
+                <li>SMS-t küldött drága nemzetközi célállomásoknak és MMS-t küldött prémium tarifákra, így a támadók minden elküldött SMS és MMS után pénzt kaptak</li>
+            </ul>
+            <p>Az iPhone-felhasználókat a FluBot rosszindulatú program nem érintette, mivel az Apple készülékek nem tudtak Android APK-kat telepíteni. Azonban az iPhone-felhasználók továbbra is kaptak fertőzött linkeket tartalmazó SMS-eket, amelyek egy adathalász webhelyre irányították őket. Ezen az oldalon arra kérték a felhasználókat, hogy adják meg Apple azonosítójukat és jelszavukat, valamint más érzékeny személyes adataikat, ezzel veszélybe sodorva a biztonságukat.</p>
+
+            <h4>Milyen veszélyei vannak az adathalászatnak?</h4>
+
+            <p>Az egyik legnagyobb kockázat a személyes adatok ellopása, hiszen a támadók gyakran kérnek jelszavakat, banki adatokat vagy személyes azonosítókat. Ha ezekhez hozzáférnek, személyazonosság-lopás áldozatává válhatsz, amely hosszú távon komoly jogi és pénzügyi problémákat okozhat. Emellett a pénzügyi veszteségek is jelentősek lehetnek, mivel a megszerzett banki adatokkal a támadók pénzt vehetnek fel a számládról vagy nagy összegű vásárlásokat hajthatnak végre a nevedben.</p>
+            <p>Az adathalász e-mailek gyakran rejtett veszélyeket is tartalmaznak: ha egy rosszindulatú hivatkozásra kattintasz, vírusokat vagy más káros szoftvereket (malware) tölthetsz le a számítógépedre. Ezek a programok nemcsak a személyes adataidhoz férhetnek hozzá, hanem megfigyelhetik az eszközödön végzett tevékenységeket is, vagy akár teljes irányítást is átvehetnek a géped fölött. Ez különösen veszélyes lehet vállalati környezetben, hiszen az ellopott belépési adatok révén a támadók hozzáférhetnek a cég rendszereihez és érzékeny üzleti információkhoz, amelyek akár a vállalkozás jövőjét is veszélybe sodorhatják.</p>
+
+            <h4>Hogyan ismerhetjük fel az adathalászatot?</h4>
+
+            <p>Amilyen könnyen elkészül egy phishing email, olyan egyszerűen ki tudjuk szűrni mi magunk is, ha figyelünk a jelekre. Szánj egy percet az e-mail vagy SMS újbóli áttekintésére, és vedd észre az esetleg figyelmen kívül hagyott árulkodó jeleket.</p>
+
+            <h5>Milyen jelekre kell figyelni e-mailek esetén?</h5>
+
+            <p><b>Ellenőrizd a feladó e-mail címét</b></p>
+
+            <p>Ökölszabály, ha az e-mail egy ismeretlen címről érkezett, vagy nem számítottál az e-mailre, akkor nagyon nagy valószínűséggel adathalász e-mailt kaptál.</p>
+            <p>Ellenőrizd a feladó e-mail címét, különösen a @ szimbólum utáni részt, amit domain-nek neveznek. Az adathalász e-mailek gyakran használnak általános vagy gyanús címeket, amelyek eltérnek a valódi vállalati címektől. A támadó általában egy hamis domaint regisztrál, amely egy valódi vállalatot vagy szervezetet imitál, és általános e-mail megkeresések ezreit küldi ki erről az email címről.</p>
+            <p>A hiteles e-mail címek utánozása van, hogy karakterhelyettesítéssel történik, például "m" helyett "rn"-t vagy nagybetűs "i" helyett kisbetűs "L"-t használnak, vagy fordítva.</p>
+            <p>Pár példa:</p>
+            <ul>
+                <li>rnicrosoft – a kis ‘M’ látszatát kelti az egymás mellé írt kis ‘R’ é skis ‘N’ betűk</li>
+                <li>voclafone – kis ‘C’ és kis ‘L’ betűket használnak, hogy a kis ‘D’ betű látszatát keltsék</li>
+                <li>paypaI – a nagy ’i’ betű a kis ’L’ betűre hasonlít</li>
+                <li>аmаzon – a ciril abc ’а’ betűjét használják az angol abc ‘a’ betűje helyett és ekkor észrevehetetlen a különbség</li>
+            </ul>
+            <p>Az adathalászok gyakran használják azt a trükköt, hogy egy ismert szervezet nevét helyezik el az e-mail címben, például a „paypal@domainregistar.com” formátumban. Ezzel azt remélik, hogy a feladó neve egyszerűen "PayPal"-ként jelenik meg a címzett postaládájában. Ez a módszer különösen hatékony, mivel sokan csak a feladó nevére pillantanak, és nem nézik meg részletesen az e-mail címet. Így a támadók könnyebben megtéveszthetnek, és rávehetnek arra, hogy megbízható forrásnak tekintsd az üzenetet, és ennek megfelelően cselekedj – például kattints egy rosszindulatú linkre vagy megadj érzékeny információkat.</p>
+            <p>Ha az adathalász támadás egy céget céloz meg, a támadó gyakran egy ott dolgozó személynek álcázza magát az e-mailben. Az ilyen típusú e-maileknél nem csak az e-mail cím ellenőrzésével derítheted ki, hogy próbálnak átverni, hanem egy másik egyszerű módszer is segíthet. Ha az e-mailt például Outlookban vagy Gmail-ben nyitod meg, és az egeret a feladó melletti ikonra viszed, akkor gyakran megjelenik a névjegy a céges információkkal, ha valóban egy ott dolgozótól érkezett az üzenet. Ha ez a névjegy nem jelenik meg, vagy hiányos, az intő jel lehet, hogy a feladó nem valódi céges alkalmazott.</p>
+
+            <p><b>Általános üdvözlet</b></p>
+
+            <p>Az adathalász e-mailek egyik árulkodó jele az általános megszólítás vagy az üdvözlés teljes hiánya. Ha egy e-mail nem tartalmazza a nevedet, és helyette általános, személytelen kifejezéseket használ, mint például "Kedves Kolléga", "Tisztelt Címzett" vagy "Tisztelt Hölgyem/Uram", akkor nagy eséllyel adathalász próbálkozásról van szó. </p>
+            <p>Ez azért történik, mert a támadók gyakran tömegesen küldenek e-maileket, és nem veszik a fáradságot, hogy egyedileg testre szabják a köszönéseket, ezzel időt spórolnak, és így a lehető legtöbb potenciális áldozatot tudják elérni egy általános, semleges üzenettel. Ha ilyesmit látsz, mindig legyél gyanakvó, és különösen óvatos, mielőtt bármit is tennél.</p>
+
+            <p><b>Az e-mailek gyakran sürgetőek és gyorsan cselekvésre akarnak késztetni</b></p>
+
+            <p>Szokatlan kérések szerepelnek az emailben vagy sürgős választ vár a feladó?</p>
+            <p>Az adathalász e-mailek gyakran sürgető hangvételűek, és céljuk, hogy gyors, átgondolatlan cselekvésre kényszerítsenek. Az ilyen üzenetekben gyakran szerepelnek szokatlan kérések vagy sürgős válaszra való felszólítás. A támadók általában egy hamis veszélyhelyzetet festenek le, például azt állítják, hogy valaki megszerezte a jelszavad, és ha nem reagálsz gyorsan, akkor elveszítheted a hozzáférést vagy felettesednek jelentik az esetet. Ez a fajta sürgetés arra szolgál, hogy kikapcsolja a kritikus gondolkodást, és elérjék, hogy a pánik miatt azonnal reagálj.</p>
+            <p>Mindig figyelj arra, ha egy e-mail túl jó ajánlatot ígér, mert valószínűleg átverésről van szó. Ugyanígy, ha a feladó sürgeti, hogy "azonnal kattints egy linkre" vagy cselekedj, az szintén figyelmeztető jel lehet.</p>
+
+            <p><b>Elgépelések vagy rossz nyelvtan / Nyelvi figyelmeztető jelek</b></p>
+
+            <p>Az adathalász e-mailek gyakran árulkodó jelei közé tartoznak a nyelvtani hibák és elgépelések. Figyelj ezekre a helyesírási és nyelvtani hibákra, a nem magyarul hangzó kifejezésekre, esetenként le nem fordított angol szavakra vagy furcsa ékezetekre. Ha olyan kifejezéseket látsz, mint "ÖN-nek", "TWO" vagy "Értesítve vagy hogy", akkor valószínűleg egy gyanús e-maillel állsz szemben.</p>
+            <p>A támadók néha nem a legjobb nyelvérzékkel bírnak, és sok esetben külföldi nyelven írják az üzeneteiket, amit aztán online fordítókkal, mint például a Google Translate vagy a DeepL, próbálnak lefordítani, vagy AI chatbotokkal generáltatnak e-maileket. Régebben sokkal szembetűnőbbek voltak ezek a hibák, de manapság kevésbé gyakoriak, mivel egyre jobbak az online fordítók, és a köztudatban elterjedt AI chatbotok is tudnak érthető és közel hibátlan adathalász e-maileket generálni.</p>
+            <p>Az elgépelések és helyesírási hibák mellett a furcsa és összezavaró tartalom is árulkodó jel lehet. Figyelj az olyan zavaros információkra is, amelyek gyanút kelthetnek. Például, ha az e-mailben található dátum egy jövőbeli időpontra utal, vagy ha olyan témáról írnak, amihez semmi közöd nincs, mint például egy Netflixes e-mail, amikor te nem is rendelkezel Netflix fiókkal. Ezek mind olyan jelek, amelyek arra figyelmeztetnek, hogy az üzenet nem megbízható forrásból érkezett.</p>
+
+            <p><b>Szúrd ki a gyanús linkeket vagy csatolmányokat</b></p>
+
+            <p>Legyél óvatos, ha váratlan e-mailt kapsz, amiben arra kérnek, hogy kattints egy linkre, tölts le egy mellékletet, vagy ha bármilyen ismeretlen webhely megkér arra, hogy add meg a felhasználó neved és jelszavad. Gondolkodj, mielőtt kattintasz és ellenőrizd a hivatkozás hitelességét!</p>
+            <p>A támadók a linkeket úgy álcázhatják, hogy ártalmatlannak és a valódi céltól eltérő hivatkozásnak tűnjenek. Az adathalászok főleg olyan URL-eket hoznak létre, amelyek hasonlóak a törvényes vagy hivatalos webhelyekhez, hogy becsapják az áldozataikat, és rávigyék őket a linkre kattintásra.</p>
+            <p>A hiteles weboldalak utánzása itt is, mint az e-mailek esetében karakterhelyettesítéssel is történhet, például "m" helyett "rn"-t vagy nagybetűs "i" helyett kisbetűs "L"-t használnak, vagy fordítva.</p>
+            <p>Pár példa:</p>
+            <ul>
+                <li>rnicrosoft – a kis ‘M’ látszatát kelti az egymás mellé írt kis ‘R’ é skis ‘N’ betűk</li>
+                <li>voclafone – kis ‘C’ és kis ‘L’ betűket használnak, hogy a kis ‘D’ betű látszatát keltsék</li>
+                <li>paypaI – a nagy ’i’ betű a kis ’L’ betűre hasonlít</li>
+                <li>аmаzon – a ciril abc ’а’ betűjét használják az angol abc ‘a’ betűje helyett és ekkor észrevehetetlen a különbség</li>
+            </ul>
+            <p>Fontos megjegyezni még, hogy minden hiperhivatkozás két részből áll:</p>
+            <ol type="1">
+                <li>a megjelenítendő szöveg</li>
+                <li>a tényleges cím</li>
+            </ol>
+            <p>A megjelenítendő szöveg a hiperhivatkozás látható része, amire kattintasz. A megjelenítendő szöveg lehet URL, egyszerű szöveg vagy akár kép is. A megjelenítendő szöveg félrevezető lehet, mert nem árulja el, hová vezet egy link valójában. Azt, hogy hová vezet a hivatkozás, a tényleges cím megmondja meg.</p>
+            <p>Ha az egérkurzort a link fölé viszed és nem kattintasz, feltárul a link valódi kiléte.</p>
+            <p>Ez megmutatja, hogy valójában hová vezet a link és így ellenőrizheted, hogy biztonságos oldalról van-e szó vagy sem.</p>
+            <p>Hogyan lehet ellenőrizni, hová mutat egy link kattintás nélkül?</p>
+            <ul>
+                <li>Laptopon (Mac / Windows): Az URL megtekintéséhez vidd az egérmutatót a link fölé</li>
+                <li>Mobilon (Android, iOS, Windows): Tartsd lenyomva a linket, amíg meg nem jelenik egy előugró menü</li>
+            </ul>
+            <p>A megjelenő URL cím különbözik attól, mint amire számítottál? Ilyenkor semmiképpen se kattints.</p>
+            <p>A támadók olyan trükkös módszert is alkalmazhatnak amikor a gyanúsnak tűnő linket, egy URL rövidítő alkalmazással (például bit.ly) lerövidítik, ekkor, ha a kurzort a link fölé visszük, nem tudjuk megismerni a tényleges hivatkozást és ebben az esetben az URL hitelességét nagyon nehéz megállapítani. Ilyenkor gondoljunk arra, hogy a hivatalos cégek és vállalatok sosem rövidítik le a linkeket az e-mail-eikben.</p>
+            <p>Ellenőrizheted a weboldalakat és fájlokat a <a href="https://www.virustotal.com/" target="_blank" rel="noopener noreferrer">VirusTotal weboldalán</a> is, ha nem vagy biztos abban, hogy valódi nem veszélyes weboldallal vagy fájllal van-e dolgod.</p>
+
+            <p><b>Személyes jellegű megkeresések</b></p>
+            <p>Légy óvatos a személyes adatokra vonatkozó kérésekkel kapcsolatban. Ha a feladó érzékeny információkat kér, például felhasználóneveket és jelszavakat, pénzügyi, valamint személyes adatokat, akkor kezdj gyanakodni, mivel a hivatalos szervezetek ritkán kérnek személyes adatokat e-mailben vagy szöveges üzenetben, ezért fontos, hogy kerüld az érzékeny adatok megosztását ilyen kommunikációs csatornákon.</p>
+
+            <h5>Milyen jeleket kell észrevennünk, ha adathalász SMS-t kapunk?<h5>
+
+            <p>Az SMS adathalászat számos mobil szöveges üzenetküldő platformon fordul elő, beleértve a nem SMS csatornákat is, mint például a WhatsApp, Messenger, Viber. A támadók olyan szöveges üzeneteket küldenek, amelyek rosszindulatú weboldalakra vagy rosszindulatú szoftverekre mutató linkeket tartalmaznak. Ezek a weboldalak vagy alkalmazások megtévesztik az áldozatokat, hogy érzékeny információkat adjanak meg vagy rosszindulatú szoftvereket töltsenek le.</p>
+            <p>Bár az SMS-ek formálisan nem hasonlítanak az e-mailekre, mégis számos, az e-maileknél felsorolt jel figyelhető meg az SMS adathalászat során is. Az alábbiakban bemutatjuk a leggyakoribb figyelmeztető jeleket, amelyek segíthetnek az adathalász SMS-ek azonosításában és elkerülésében.</p>
+
+            <p><b>Külföldi telefonszámról érkezett az SMS</b></p>
+
+            <p>Fontos lépés, hogy ellenőrizd a feladó telefonszámát. Ha az SMS külföldi telefonszámról érkezett, akkor, ha nem is 100%-ban, de 99%-ban biztos lehetsz abban, hogy adathalász SMS-t kaptál. Ugyanakkor figyelj arra, hogy a támadók képesek spoofing technikát alkalmazni, ami azt jelenti, hogy látszólag lemásolnak egy magyar telefonszámot. Ezért sosem szabad automatikusan megbízni az üzenet feladójában.</p>
+
+            <p><b>Figyelj a linkekre</b></p>
+
+            <p>Gyanús, ha a link nem a hivatalos weboldalra mutat. A támadók gyakran olyan URL-eket hoznak létre, amelyek hasonlítanak a törvényes vagy hivatalos webhelyekre, így próbálják meg rávenni az áldozatokat, hogy rákattintsanak.</p>
+            <p>A hiteles weboldalak utánzása itt is, mint az e-mailek esetében karakterelhagyással vagy karakterhelyettesítéssel is történhet, de a támadók olyan trükkös módszert is alkalmazhatnak amikor a gyanúsnak tűnő linket, egy URL rövidítő alkalmazással (például bit.ly) lerövidítik. Ekkor, ha a kurzort a link fölé visszük, nem tudjuk megismerni a tényleges hivatkozást és ebben az esetben az URL hitelességét nagyon nehéz megállapítani. Ilyenkor gondoljunk arra, hogy a hivatalos cégek és vállalatok sosem rövidítik le a linkeket az e-mail-eikben.</p>
+
+            <p><b>Helyesírási, nyelvtani hibák</b></p>
+
+            <p>Bár az SMS-ek formálisan nem hasonlítanak az emailekre, mégis sok az e-mailnél felsorolt jelet meg lehet figyelni az SMS adathalászatnál is. Az adathalász SMS-ek is gyakran tartalmaznak nyelvtani hibákat és elgépeléseket. Figyelj ezekre a helyesírási és nyelvtani hibákra, a nem magyarul hangzó kifejezésekre, esetenként le nem fordított angol szavakra vagy furcsa ékezetekre. Ha olyan kifejezéseket látsz, mint "ÖN-nek", "TWO" vagy "Értesítve vagy hogy", akkor valószínűleg egy gyanús SMS-sel állsz szemben.</p>
+
+            <p><b>SMS tartalma nem releváns</b></p>
+
+            <p>Gyanakodj, ha az üzenet olyan információkat tartalmaz, amelyek nem relevánsak számodra. Például, ha kapsz egy SMS-t, amely a Netflix-előfizetésedről szól, de neked nincs Netflix fiókod, vagy ha egy OTP-től érkező üzenetet kapsz, pedig nem vagy ügyfelük.</p>
+
+            <p><b>Személyes jellegű megkeresések</b></p>
+
+            <p>Légy óvatos a személyes adatokra vonatkozó kérésekkel kapcsolatban. Hivatalos szervezetek, mint például bankok vagy szolgáltatók, ritkán kérnek érzékeny adatokat SMS-ben. Ha egy SMS azt kéri, hogy add meg a jelszavad, bankszámlaszámod vagy egyéb személyes információdat, akkor az egyértelmű jele lehet annak, hogy adathalászattal állsz szemben. Az érzékeny adatok megosztása SMS-en keresztül rendkívül kockázatos, és a legjobb, tehát mindenképpen kerüld az érzékeny adatok megosztását ilyen kommunikációs csatornákon.</p>
+
+            <p><b>SMS adathalászat példák a való életből</b></p>
+
+            <p>1. példa</p>
+            <p>OTP / Erste banknál problémák jöttek elő a bankszámlád kapcsán.</p>
+            <p>Az ilyen SMS-ekben a támadók arra figyelmeztetik a felhasználókat, hogy gyanús tevékenységet észleltek a számlájukon, és arra kérik őket, hogy kattintsanak a megadott linkre a probléma megoldása érdekében. A linkre kattintva a felhasználók egy hamis banki webhelyre jutnak, ahol személyes adataikat kérik el.</p>
+            <img>
+
+            <p>2.példa</p>
+            <p>A Black Friday, Cyber Monday és az ünnepek közeledtével az ajándékvásárlást kihasználva megszaporodtak a csomag-átverős SMS-ek.</p>
+            <p>Az ilyen üzenetekben a felhasználók gyakran azt olvashatják, hogy egy csomag várakozik rájuk, és a nyomon követéshez kattintaniuk kell a megadott linkre. Egy másik változat szerint nem tudják kézbesíteni a csomagot valamilyen fizetési vagy kiszállítási probléma miatt, ezért kérik a felhasználókat, hogy erősítsék meg személyes adataikat, lakcímüket, vagy adják meg újra banki adataikat. A link azonban egy hamis weboldalra vezet, ahol a támadók megszerzik a megadott információkat, amikkel visszaélhetnek.</p>
+            <img>
+
+            <p>3.példa</p>
+            <p>Netflix fiókod előfizetésével problémák vannak</p>
+            <p>A támadók SMS-üzeneteket küldenek felhasználóknak, azt állítva, hogy az előfizetésük kifizetése sikertelen volt, és arra kérik őket, hogy kattintsanak egy linkre a fizetési adataik frissítéséhez. Ha a felhasználók rákattintanak a linkre, és megadják személyes vagy hitelkártyaadataikat, a támadók ellophatják ezeket az információkat, és rosszindulatúan visszaélhetnek azokkal.</p>
+            <p>A Netflix a hivatalos <a href="https://help.netflix.com/en/node/65674" target="_blank" rel="noopener noreferrer">Help Center oldalán</a>rávilágított erre a problémára, és óvatosságra intette a felhasználókat.</p>
+            <img>
+
+            <p>4.példa</p>
+            <p>Vodafone pontrendzserében megmaradt pontjaid vannak, amiket kedvezményes vásárlásra használhatsz.</p>
+            <p>A támadók a Vodafone nevében küldött üzenettel próbálják rávenni a felhasználókat, hogy kattintsanak egy linkre, amely állítólag a Vodafone hivatalos oldalára irányít, ahol a megmaradt pontjaikat kedvezményes vásárlásra használhatják fel. Azonban a link valójában egy hamis weboldalra vezet, ahol a támadók személyes és banki adatokat próbálnak megszerezni.</p>
+            <img>
+            <img>
+            <img>
+
+            <h5>Milyen jeleket kell keresni az adathalász weboldalakon / landing page-eken?</h5>
+
+            <p>Ha mégis kattintottál és a link átirányított egy weboldalra, még itt is vannak olyan jelek, amik megkongathatják a vészharangot és esélyed van csak bezárni a weboldalt.</p>
+
+            <p><b>URL ellenőrzése</b></p>
+
+            <p>Az első lépés, hogy alaposan megnézd a böngésződ címsorában megjelenő URL-t. Ha az URL nem egyezik meg azzal a céggel, ahonnan az e-mailt vagy SMS-t kaptad, akkor nagy valószínűséggel adathalász weboldallal állsz szemben.</p>
+            <p>Egy másik fontos jel, hogy az URL hogyan kezdődik: ha HTTP-vel kezdődik és nem HTTPS-sel, akkor ez is figyelmeztető jel lehet. A HTTPS a biztonságos kapcsolat jele, amely titkosítja az adatokat, míg a HTTP nem. A legtöbb böngésző ezen kívül egy áthúzott vagy hiányzó lakat ikonnal jelzi, hogy a weboldal nem biztonságos.</p>
+
+            <p><b>Weboldal dizájnja</b></p>
+
+            <p>Érdemes megnézni a weboldal kinézetét is. Az adathalász weboldalak gyakran gyengén megtervezettek, és lehet, hogy nem úgy néznek ki, mint a hiteles weboldalak. Figyelj a rossz minőségű grafikákra, a furcsa elrendezésre vagy a szokatlan színsémákra. A weboldal az adathalász e-mailben is említett, nem létező vállalat logóját tartalmazta, de mégis eltérő a logó vagy a betűtípus. Furcsa a gombok kinézete vagy elhelyezkedése. Ha a weboldal dizájnja eltér a megszokottól, érdemes gyanakodni.</p>
+
+            <p><b>Weboldalon található információk</b></p>
+
+            <p>A hiteles webhelyek általában több oldallal rendelkeznek; az al- vagy főoldalak hiánya és a korlátozott tartalom szintén egy figyelmeztető jel. Ha a weboldal nem tartalmaz elegendő információt az adott cégről, vagy hiányoznak a kapcsolati adatok (például telefonszám, e-mail cím, cím), az is árulkodó jel lehet. A megbízható cégek általában biztosítanak különböző lehetőségeket a kapcsolatfelvételre.</p>
+
+            <p><b>Túl sok információt kérnek tőled</b></p>
+
+            <p>Gyanús lehet, ha a weboldal túl sok információt kér tőled, például személyes adatokat, hitelkártya-információkat vagy jelszavakat, anélkül, hogy ez indokolt lenne. A megbízható cégek nem kérnek tőled érzékeny információkat gyanús módon.</p>
+
+            <h5>Milyen jeleket tudunk felfedezni egy hangalapú adathalászat (vishing) közben?</h5>
+
+            <p>Ahhoz, hogy felismerd a vishing hívásokat, fontos tisztában lenni a figyelmeztető jelekkel, és körültekintően járni el minden telefonhívás során. A telefonodat ugyanolyan óvatosan kell kezelned, mint a laptopodat; mindig szánj időt arra, hogy átgondold és ellenőrizd a hívásokat és a szöveges üzeneteket.</p>
+
+            <p><b>Hívóazonosító ellenőrzése</b></p>
+
+            <p>Elsőként figyelj a hívóazonosítóra. Ha a hívó ismeretlen számmal keres, vagy a hívás külföldi számról érkezik, érdemes gyanakodnod. A támadók gyakran hamisítják a hívóazonosítót, így magyar telefonszámról vagy egy jól ismert intézmény nevében is kereshetnek.</p>
+
+            <p><b>Érzékeny információk kérése</b></p>
+
+            <p>Ha a hívás során a hívó személy nem szokványos vagy érzékeny információt kér, például jelszót vagy banki adatokat, ez egyértelmű figyelmeztető jel. Bankok soha nem fogják elkérni a teljes banki adataidat, hiszen ezek a rendszerükben amúgy is megvannak. Fontos, hogy soha ne oszd meg a többfaktoros hitelesítési kódodat senkivel, mert ha valaki már ismeri a jelszavad, akkor a második faktor az utolsó védelmi vonal, amely megakadályozza a támadót abban, hogy hozzáférjen a felhasználói fiókodhoz.</p>
+
+            <p><b>Sürgetés és nyomásgyakorlás</b></p>
+
+            <p>A támadók gyakran sürgetik az áldozatokat, kritikus problémákra hivatkozva, hogy nyomást gyakoroljanak rád. Ha úgy érzed, hogy a hívó túl gyorsan vagy agresszívan próbálja megkérdőjelezni a döntéseidet, akkor érdemes óvatosnak lenned. Az ilyen nyomásgyakorlás célja, hogy elterelje a figyelmedet, és azonnali reakcióra kényszerítsen.</p>
+
+            <p><b>Kapcsolat újra felvétele egy másik hivatalos csatornán</b></p>
+
+            <p>A telefonos adathalászat megelőzése megköveteli a kéretlen hívásokkal szembeni szkepticizmust. Ha bármilyen kétséged merül fel a hívás jogosságával kapcsolatban, a legjobb megoldás, ha leteszed a telefont, és a hívás megerősítése érdekében közvetlenül az intézménnyel lépsz kapcsolatba megbízható elérhetőségeken keresztül. Az óvatosság és a tudatosság kulcsfontosságú a vishing elleni védekezésben, és ezekkel a lépésekkel csökkentheted a kockázatokat.</p>
+
+            <h4>Hogyan védekezhetsz a különböző adathalász támadások ellen?</h4>
+
+            <p>Ha gyanús az e-mailt vagy üzenet kapsz, akkor töröld azt a készülékedről és tiltsd le a az emailt és a telefonszámot, ahonnan az üzenet érkezett. Ha pedig gyanús telefonhívást kapsz, akkor szintén tiltsd le a telefonszámot.</p>
+            <p>Szánj néhány extra másodpercet arra, hogy ellenőrizd a beérkező üzenetet vagy telefonhívást.</p>
+            <p>Soha ne kattints az üzenetben található linkekre anélkül, hogy ellenőriznéd, hogy a link, az üzenet és a feladó valódi-e.</p>
+            <p>Mindig jelentsd az adathalász emailt, ha egy kérés szokatlan, váratlan vagy nem tűnik hitelesnek, illetve ha munkahelyi email címedre érkezik adathalász email, akkor a munkahelyen előírtaknak megfelelően járj el vagy keresd fel a vezetőd.</p>
+            <p>Ha véletlenül rákattintottál egy adathalász linkre vagy letöltöttél egy gyanús csatolmányt, és azt gyanítod, hogy rosszindulatú programot töltött le, először is ne ess pánikba! Figyelj az árulkodó jelekre, mint például, hogy az alkalmazás nem nyílik meg, vagy nem lehet eltávolítani az alkalmazást.</p>
+            <p>Ha azt gyanítod, hogy a készülékedet megfertőzték, el kell távolítanod a kártékony szoftvert az eszközödről. Ezt a következő pontok egyikével megteheted:</p>
+
+            <h5>Kártékony kód eltávolítása számítógépről</h5>
+
+            <p>Kártékony szoftver eltávolítása a számítógépedről:</p>
+
+            <ul>
+                <li>Válaszd le a hálózatról a fertőzött eszközt – húzd ki az eszközből az internet kábelt vagy kapcsold ki a Wi-Fi elérést</li>
+                <li>Ne dugj be hordozható eszközt a számítógépbe, mert az is megfertőződhet</li>
+                <li>Próbálj meg vírusírtó szoftvert futtatni az eszközön</li>
+                <li>Ha a vírusvédelmi szoftvered nem vezet eredményre, formázd a meghajtót, és telepítsd újra az operációs rendszert a számítógépen</li>
+            </ul>
+
+            <h5>Kártékony kód eltávolítása telefonról</h5>
+
+            <p><b>Kártékony szoftver eltávolítása Android eszközről</b></p>
+
+            <p>Aktiváld a Google Play Protect-et és végezz el egy teljes eszközellenőrzést. Ez lehetővé teheti a rosszindulatú programok törlését.</p>
+            <p>Ha ez nem működik, aktiválhatod az Android csökkentett módját. A Csökkentett mód ideiglenesen blokkolja a harmadik felektől származó alkalmazások futtatását, és lehetővé teszi a kártékony alkalmazások azonosítását és eltávolítását.</p>
+            <p>Ha ez sem működik, állítsd vissza a telefont gyári beállításra, de ne készíts biztonsági mentést, hogy biztosítsd a kártékony kód teljeskörű eltávolítását.</p>
+
+            <p><b>Kártékony szoftver eltávolítása Apple eszközödről</b></p>
+
+            <p>Állítsd vissza a készüléket a gyári beállításokra, a visszaállítás előtt ne készíts biztonsági másolatot, hogy biztosítsd a vírus teljes eltávolítását</p>
+
+            <h5>Legyél mindig napra kész</h5>
+
+            <p>Fontos, hogy mindig naprakész legyél a legújabb adathalász technikákkal és trendekkel kapcsolatban, ezért is érdemes kipróbálnod magad, az alábbi játékban, hogy felismered-e az adathalász próbálkozásokat: <a href="https://phishingquiz.withgoogle.com/" target="_blank" rel="noopener noreferrer">Google's Phishing Quiz</a></p>
+
+            <h4>Adathalász próbálkozások bejelentése</h4>
+
+            <p>Mindenképpen fontos az is, hogy ne csak kiszűrjük, de jelentsük is az ilyen adathalász e-mail-eket. Több lehetőség is van a bejelentésre:</p>
+            <p>Amennyiben egy Gmail fiókba érkezett üzenet gyanúsnak tűnik és feltételezzük, hogy azt károkozási céllal küldték nekünk, a Válasz gomb melletti Továbbiak ikonra kattintva, kiválaszthatjuk az Adathalászat bejelentése opciót, ezzel segítve a káros tartalom mielőbbi eltávolítását.</p>
+            <p><a href="https://support.google.com/mail/answer/180707" target="_blank" rel="noopener noreferrer">A Gmail-üzenetek hitelesítésének ellenőrzése</a></p>
+            <p>Az Nemzeti Média- és Hírközlési Hatóság tartalom bejelentő űrlapján a VIII. Adathalász tartalom opció kiválasztásával tudod bejelenteni: <a href="https://ekapu.nmhh.hu/eljarastipus/223" target="_blank" rel="noopener noreferrer">NMHH Hotline – bejelentő űrlapok</a></p>	
+            <p>A Google-nek is van bejelentő felülete: <a href="https://safebrowsing.google.com/safebrowsing/report_phish/?hl=hu" target="_blank" rel="noopener noreferrer">Google Safe Browsing - Adathalászatot folytató oldal jelentése (Magyar)</a></p>
+            <p>Illetve hamis weboldal bejelentését a Google-nél itt teheted meg: <a href="https://safebrowsing.google.com/safebrowsing/report_phish/?tpl=mozilla&hl=hu&url=http%3A%2F%2Fpartizaninfo-wanted2008.blogspot.hu%2F2008%2F10%2F136-rzsr-gbor-ovlis-fej-provoktor.html" target="_blank" rel="noopener noreferrer">Google Safe Browsing - Hamisnak vélt weboldal jelentése (Magyar)</a></p>
+            <p>Fogyasztóvédelmi panasz esetében a főispánságok (azaz Kormányhivataloknál) az illetékesek, bejelentést itt lehet tenni: <a href="https://magyarorszag.hu/szuf_ugyleiras?id=61bf1c56-3705-4710-8d3d-8cfcdc972e26" target="_blank" rel="noopener noreferrer">Magyarország.hu - Fogyasztóvédelmi panasz</a></p>
+            <p>Ezen felül a Nemzeti Közszolgálati Intézménynél is lehet anonim bejelentést tenni: <a href="https://nki.gov.hu/intezet/tartalom/incidens-bejelentes-anonim/" target="_blank" rel="noopener noreferrer">NKI - Incidens bejelentés</a></p>
+            <p>Ha pedig valamilyen vagyoni kár ért (pénzt loptak, telefont loptak, stb.), akkor jelentheted a rendőrségnek.</p>
+            <p>A kiberbűnözők által alkalmazott taktikák megismerésével és a szükséges megelőző lépések alkalmazásával nagymértékben csökkentheted annak kockázatát, hogy áldozatul ess ezeknek a támadásoknak.</p>
+            <p>Ne feledd, maradj éber, bízz az ösztöneiben, és gondolkodj, mielőtt cselekszel.</p>
 
             <h3>Kártékony kódok</h3>
+
+            <p>Sokan felcserélve használják a „rosszindulatú programok” és a „vírusok” kifejezéseket, de nem teljesen ugyanazok. A különbség a rosszindulatú programok és a vírusok között a következő: a rosszindulatú program egy gyűjtőfogalom, a vírusok pedig csak egy típusú kártevők a sok más típus között.</p>
+            <p>A malware, azaz rosszindulatú programok egy gyűjtőfogalom minden rosszindulatú szoftverre (malicious software), amelyet kifejezetten a rendszer vagy annak felhasználójának megfertőzésére és károsítására írtak. A számítógépes vírus csak egyfajta kártevő a rosszindulatú szoftverek körében.</p>
+            <p>Ahogy minden négyzet téglalap, de nem minden téglalap négyzet, úgy minden vírus rosszindulatú program, de nem minden kártevő vírus.</p>
+            <p>Tehát ha kíváncsi vagy arra, hogy a rosszindulatú programok és a vírusok ugyanazok-e, a válasz határozott „nem”. A rosszindulatú programok kategóriájába tartoznak a vírusok, kémprogramok, adware, ransomware és más típusú káros szoftverek. Hasznos, ha ismerjük a különbséget vírusok és más típusú kártevők között, mert így megelőzhetjük és eltávolíthatjuk őket.</p>
+            <p>A számítógépes vírust úgy tervezték, hogy lemásolja magát, és a lehető legszélesebb körben elterjedjen más eszközökre, ugyan úgy, ahogy egy biológiai vírus megfertőzi a gazdatestet, replikálódik és új gazdatestekre terjed. A számítógépes vírusok cserélhető adattárolók (például pendriveok, külső meghajtók), fertőzött webhelyek, email mellékletek és akár hálózati routerek is továbbíthatják.</p>
+            <p>Hogy pontosan mit csinál a vírus, az a kifinomultságától függ. Az egyszerű rosszindulatú kód károsítja a merevlemezt, vagy törli a fájlokat. Egy bonyolultabb vírus elrejtőzhet a számítógépeden, és nemkívánatos tevékenységeket végez, például spam e-maileket küld. A kifejlett vírusok, az úgynevezett polimorf vírusok, módosítják saját kódjukat, hogy elkerüljék az észlelést.</p>
+            <p><i>Érdekesség! A vírusok és a rosszindulatú programok közötti különbség zavara onnan ered, hogy rosszul terjed el a köztudatban. Amint egy szó vagy kifejezés bekerül a köztudatba, az hajlamos megragadni az emberekben is. Az 1970-es évek első rosszindulatú programjait „vírusoknak” nevezték el. Az 1980-as és 1990-es években megjelent első kártevőirtó programokat „antivírusnak” nevezték, mert akkoriban ez volt az elsődleges probléma; sok ilyen eszköz ma is ezt a nevet viseli, annak ellenére, hogy a vírusokon kívül sokkal több mindentől véd.</i></p>
+            <img>
+
+            <h4>Kártékony kódok különböző fajtái</h4>
+
+            <p>A kártékony kódok különböző fajtái számos módon képesek kárt tenni a számítógépedben, adataidban vagy személyes biztonságodban. Ezeket a kártékony programokat több kategóriába sorolhatjuk, bár gyakran átfedések lehetnek köztük. A közös céljuk, hogy kárt okozzanak, adatokat lopjanak, vagy kontrollt szerezzenek a rendszered felett.</p>
+
+            <h5>Vírusok</h5>
+
+            <p>Szintén lemásolja magát, és a lehető legszélesebb körben elterjedjen más eszközökre. Hogy pontosan mit csinál a vírus, az a kifinomultságától függ: károsítja a merevlemezt, vagy törli a fájlokat, nemkívánatos tevékenységeket végez, például spam e-maileket küld. Csak akkor aktiválódik, ha a fertőzött fájl fut.</p>
+
+            <h5>Férgek / Worms</h5>
+
+            <p>Saját magát replikáló kártevő, amelynek elsődleges feladata az, hogy számítógépről számítógépre ugorjon, gyakran anélkül, hogy bármi más kárt tenne a replikáción túl. Nem igényel felhasználói beavatkozást a szaporodáshoz.</p>
+
+            <h5>Zsarolóvírus / Ransomware</h5>
+
+            <p>A zsarolóvírus egy különösen káros rosszindulatú program, amely titkosítja a számítógéped fájljait, mappáit, vagy akár az egész rendszeredet, majd váltságdíjat követel a visszaállításért. A fájlokhoz való hozzáférést blokkolja, és a támadó csak a váltságdíj kifizetése után ígéri, hogy visszaadja az irányítást. Azonban még a fizetés sem garantálja a fájlok visszaállítását.</p>
+            <p>Hogyan ismerhetők fel?</p>
+            <ul>
+                <li>Titkosítják a fájlokat</li>
+                <li>Zsaroló üzeneteket jelenítenek meg</li>
+                <li>Határidőt szabnak</li>
+                <li>Törlik a fájljaid egy részét</li>
+            </ul>
+
+            <h5>Adware</h5>
+
+            <p>Az adware olyan szoftver, amelyet kifejezetten hirdetések megjelenítésére terveztek az eszközödön, leginkább azért, hogy bevételt generáljanak a készítők számára. Gyakran pop-up hirdetésekkel, bannerekkel vagy kéretlen reklámokkal bombázza a felhasználót. Bár önmagában nem mindig káros, sok esetben idegesítő, és a böngészési élményt rontja. Egyes adware-ek rosszindulatú programokkal, például kémprogramokkal társulhatnak, amelyek a felhasználó személyes adatait is megszerezhetik.</p>
+
+            <h5>Scareware</h5>
+
+            <p>A scareware program felhívja a figyelmed, hogy a számítógéped rosszindulatú programokkal fertőzött, és felszólít egy megoldást jelentő program letöltésére. Néha maga a letöltött program a rosszindulatú, máskor pedig haszontalan szoftverekért kell fizetned.</p>
+
+            <h5>Kémprogram / Spyware</h5>
+
+            <p>Ahogy a név is sugallja, kémkedik a számítógépen, például a billentyűleütéseket vagy a böngészési előzményeket, és ellopja a személyes adatokat. Gyakran a felhasználó tudta nélkül települ reklámokkal vagy ingyenes szoftverekkel.</p>
+
+            <h5>RootKit</h5>
+
+            <p>Ez a legnehezebben észlelhető és eltávolítható program, mivel a Rootkit a számítógép mélyére temetkezik, és különféle illegális tevékenységeket végez, beleértve a felhasználói adatok ellopását (hasonlóan a kémprogramokhoz), spam e-mailek küldését, a DDOS támadásokban való részvételt vagy engedélyezi a hackereknek a géphez való távoli hozzáférést.</p>
+
+            <h5>Keylogger</h5>
+
+            <p>Billentyű leütést, képernyőképet vagy a kamerával videó felevételt készíthetnek. A megszerzett adatokkal visszaélhetnek, ellophatják a személyazonosságodat, vagy akár zsarolhatnak is.</p>
+
+            <h5>Trójai programok</h5>
+
+            <p>Olyan program, ami látszólag hasznosat vagy érdekeset csinál, de káros programok számára kaput nyit az általunk használt eszközön. A trójai programok nem szaporodnak és önmagukban ártalmatlanok, hogy a víruskereső programok ne találják meg őket. Később az internet segítségével egy távoli hacker képes átvenni az irányítást az egész számítógép felett.</p>
+            <p>A Trójai programnak - a megfelelő adminisztrátori jogokkal - korlátlan hozzáférése van az operációs rendszerhez. A támadó céljától függ, hogy ő mihez kezd ezzel a hatalommal.</p>
+
+            <h4>Milyen típusú eszközöket érinthet?</h4>
+
+            <p>A rosszindulatú programok bármilyen eszközben kárt tudnak okozni, bár attól függően, hogy mit használsz, különböző fokú kockázatnak van kitéve az eszközöd.</p>
+            <p>A Windows PC-k a legnépszerűbb célpontok, mivel ezek a leggyakrabban használt számítógépes rendszerek. A Mac számítógépeket a rosszindulatú szoftverek készítői évekig figyelmen kívül hagyták az akkor még alacsonyabb piaci részesedésük miatt, de a népszerűség növekedésével a Mac-re szánt rosszindulatú programok is megjelentek.</p>
+            <p>Az okostelefonokat és táblagépeket is megfertőzhetik rosszindulatú programok, annak ellenére, hogy viszonylag biztonságosabbak. Bár az alkalmazásokat csak a hivatalos App Store-ból töltheted le iPhone-ra, az Android felhasználók nem korlátozódnak szigorúan a Google Play-re. Mindazonáltal, miközben mindkét cég szorgalmasan járőrözik üzleteikben, a rosszindulatú programoknak néha sikerül belopódzniuk és megfertőzniük néhány szerencsétlen lelket, mielőtt letörölnék az ilyen programokat.</p>
+
+            <h4>Néhány dolog, amire érdemes odafigyelni</h4>
+
+            <p>Ha a számítógéped furcsán kezd viselkedni, az gyakran valamilyen kártevő jelenlétére utalhat. Ezek a jelek segíthetnek felismerni a problémát:</p>
+            <ul>
+                <li>A számítógéped el sem indul, vagy indulás után rögtön lefagy</li>
+                <li>Az eszközöd folyamatosan és észrevehetően lassabb, mint általában</li>
+                <li>Hirtelen eltűnik a szabad hely a merevlemezről</li>
+                <li>Néhány program nem működik megfelelően, váratlanul lefagy, összeomlik</li>
+                <li>Ismeretlen fájlok vagy programok jelennek meg indokolatlanul</li>
+                <li>Folyamatosan különböző hirdetések vagy a böngészőben új ablakok bukkannak </li>
+                <li>Az internetkapcsolatod minden értelmes ok nélkül sokkal lassabbá válik</li>
+                <li>Az operációs rendszer minden ok nélkül időnként összeomlik, vagy magától újraindul</li>
+            </ul>
+
+            <h4>Hogyan tudom megmondani, az én gépemet melyik támadta meg?</h4>
+
+            <p>A legtöbb rosszindulatú program mindent megtesz az észlelés elkerülése érdekében, bár vannak olyan típusok, amelyek pont a jelenlétük ismertté tételére támaszkodnak. </p>
+            <p>A zsarolóvírus (ransomware) például nyilvánvalóan tájékoztat téged a fertőzésről, hogy remélhetőleg kifizesd a kívánt váltságdíjat. A rosszindulatú programok egyéb formái, például a kémprogramok, próbálnak a lehető legvisszafogottabbak lenni. Céljuk az információgyűjtés, és ezt észlelés nélkül kell megtenniük.</p>
+            <p>A különböző rosszindulatú fertőzésnek van néhány közös gyakori jele, típustól függetlenül. Az egyik legfeltűnőbb, hogy a számítógép hirtelen nagyon lassan kezd működni. Ez gyakran azt jelenti, hogy egy rosszul írt rosszindulatú program elszívja a számítógép erőforrásait. Mivel sokféle rosszindulatú programnak vannak hasonló tünetei, bonyolult lehet a pontos változat azonosítása az eszközön. </p>
+            <p>Függetlenül attól, hogy milyen típusú rosszindulatú programmal találkozol, az első és legfontosabb lépés a fertőzött program mielőbbi eltávolítása a számítógépről. Emellett érdemes azonnal megakadályozni, hogy a kártevő elterjedjen más eszközökre a hálózatodon.</p>
+
+
+            <h4>Specifikus incidensek</h4>
+
+            <p>A következő fejezetben bemutatunk néhány specifikus incidenst, amik a múltban nagy port kavartak.</p>
+
+            <p><b>Kr00k</b></p>
+
+            <p>A Kr00k incidens kommunikációs eszközök százaiban volt jelen. A telefonodban és a laptopodban van egy olyan kis lapocska, amit Wi-Fi chip-nek hívnak. Ez segít abban, hogy a készülékeid csatlakozni tudjanak a Wi-Fi-hez. 2020 márciusában felfedeztek egy sérülékenységet a Broadcom és Cypress WiFi chip-ekben. A sérülékenységet Kr00k-nak nevezték el.</p>
+            <p>A felhasználó készüléke adatokat küld a Wi-Fi routernek. Képzeld el azt, hogy ez a sok adat egy dobozba van zárva, amit csak egy számkombinációval lehet kinyitni. Ezt a kombinációt csak a felhasználó készüléke és a router ismeri. A támadó egy jelet küld a készüléknek, ami megszakítja a kapcsolatot. A felhasználó készüléke viszont továbbra is adatokat küld, de a kombináció csupa nullára lesz állítva. Ezzel az információval a dobozt ki lehet nyitni, és a hackerek elérik a felhasználó adatait. Azonban, biztonságos HTTPS oldalhoz volt csatlakozva, akkor a felhasználók adatai biztonságban maradnak a sérülékenység ellenére is, mivel ezek az oldalak egy másik titkosítást is használnak.</p>
+            <p>Ez a probléma az iPad 13., iPhone 13. és MAC 10. verziójiban volt jelen.</p>
+
+            <p><b>WebKit</b></p>
+
+            <p>Vannak olyan sérülékenységek, amik veszélyesnek hangzanak, a közösségi média felfújja őket, viszont a felhasználók túlnyomó többségének nincs oka a pánikra.</p>
+            <p>Ilyen volt a WebKit sérülékenység, amit az Apple az iOS 16.3.1, az iPadOS 16.3.1 és a macOS 13.2.1 kiadásával javított.</p>
+            <p>Az Apple 2024 január elején frissítést adott ki, hogy javítsa az iPhone, iPad és Mac készülékei WebKit nulladik napi sebezhetőségét, amelyeket a hackerek "aktívan kihasználhattak". Ez egy rutin javítás, amely bizonyos hibákat és sebezhetőségeket orvosol, ami a nagyközönség és a média számára is észrevétlen maradt volna, ha nem hangzott volna ijesztően a hiba.</p>
+            <p>A nulladik napi támadás (zero-day vagy zero-hour támadás) egy biztonsági fenyegetés, ami valamely számítógépes alkalmazás olyan sebezhetőségét használja ki, ami még nem került publikálásra, a szoftver fejlesztője nem tud róla, vagy nem érhető még el biztonsági javítás.</p>
+            <p>A sikeres kihasználás lehetővé teszi a támadók számára, hogy tetszőleges kódot futtassanak a sebezhető iOS, iPadOS és macOS verziójú eszközökön. Például a hacker kiválthat egy már létező problémát, módosíthat információkat egy programon belül, vagy telepíthet egy kártékony kódot, amit később futtathat.</p>
+            <p>Bár ezt a nulladik napi hibát valószínűleg csak célzott támadásokban használták fel, ami azt jelenti, a felhasználók túlnyomó többségének nem volt oka a pánikra, mivel semmi sem utalt arra, hogy a hackerek a biztonsági rést kihasználva tömeges támadásokat indítottak volna a nagyközönség ellen. Azt is el kell mondani, hogy a közösségi médiában a biztonsági frissítés miatti felháborodás valószínűleg fel van fújva. Az Apple egész évben ad ki hasonló vészhelyzeti biztonsági frissítéseket, különösebb rémület és pánik nélkül.</p>
+
+            <h4>Védekezési stratégiák</h4>
+
+            <h5>Antivírus vagy antimalware</h5>
+
+            <p>Mindig használj aktuális és megbízható forrásból beszerzett vírusvédelmi szoftvereket.</p>
+            <p>Nincs különbség antivírus és antimalware között, napjainkban a kettő egy és ugyanaz. Senki nem kínál olyan szoftvert, amely észleli és eltávolítja a vírusokat, de figyelmen kívül hagyja a férgeket, trójai programokat, kémprogramokat és zsarolóvírusokat (ransomware-eket).</p>
+            <p>Egy jó antimalware program figyelemmel kísérik még az email klienseket és a webböngészést, valamint adatbázist vezetnek az ismert és jelentett veszélyes webhelyekről. Ha olyan webhelyet próbálsz meglátogatni, amelyről ismert, hogy rosszindulatú, a víruskereső megakadályozza, hogy betöltsön a webhely. Hasonlóképpen, ha gyanús melléklet érkezik emailben, a szoftver észleli azt, és áthelyezi a mellékletet egy karanténmappába, ahol nem lehet megnyitni. Ha meg vagy győződve arról, hogy a melléklet biztonságos, akkor visszahelyezheted a fájlt egy normál mappába, és megjelölheted a szoftverben, mint hibás találatot a későbbi hivatkozás érdekében.</p>
+
+            <h5>Alkalmazások és operációs rendszerek telepítése és rendszeres frissítése</h5>
+
+            <p>Hasonlóan egy betört vagy véletlenül nyitva hagyott ablakhoz, amelyet egy betörő kihasználhat, ezeket a sebezhetőségeket a hackerek is kihasználhatják, ha nem alkalmazzuk a legújabb frissítéseket.</p>
+            <p>Mindig frissíts – ne csak a telefonod, a gépedet is!</p>
+            <p>Csak megbízható forrásból tölts le alkalmazásokat. Ne tölts le semmit gyanús vagy nem megbízható oldalakról! Szoftvert mindig az adott gyártó oldaláról tölts le! A letöltéskor mindig olvasd el figyelmesen, hogy mit töltesz le! Ne tölts le fájlokat a számítógépedre és telefonodra, amiket e-mailben és SMS-ben küldenek neked.</p>
+            <p>A telefonodon is körültekintően járj el egyes alkalmazások telepítésénél. A telefonod márkája meghatározza, hogy milyen opciód van. Ha Apple telefonod van, akkor csak az App Store-t használd. Előnye, hogy az Apple minden közzétett alkalmazáson biztonsági ellenőrzést hajt végre. Android telefonon a Google szintén fenntart egy boltot, a Google Play-t, ahol az alkalmazások átmennek egy alap biztonsági ellenőrzésen, de máshonnan is letölthetsz és telepíthetsz alkalmazásokat az Android telefonodra, szóval a biztonság kedvéért telepíts egy vírusírtót. </p>
+            <p>Kerüld a vadonatúj alkalmazásokat, minél több ideje van az alkalmazás a „boltban” annál valószínűbb, hogy megbízható. Ezen felül pedig az alkalmazás engedélyeket fog kérni, gondold át, hogy szüksége van-e az alkalmazásnak az adatokra, amiket kér.</p>
+            <p>Az Apple, Samsung, Google, Windows, Linux rendszerek és az alkalmazások is rendszeres frissítéseket adnak ki, nem csak funkciók frissítéséhez, hanem sérülékenységek javítására is. Tartsd naprakészen a telefonod, számítógéped operációs rendszerét és az eszközeiden használt alkalmazásokat. Alkalmazz rendszeres frissítéseket az operációs rendszerhez és az általad használd szoftverekhez. A legtöbb alkalmazás megnyitás után felajánlja a frissítés lehetőségét, ezeket mindenképpen végezd el, hiszen egyes frissítések kijavíthatnak sérülékenységeket és biztonsági réseket. Ez azért fontos, mert minimalizálja a sebezhetőségeket, ha ezt nem teszed meg, akkor egy kiberbűnöző kihasználja a sérülékenységet. Ha az alkalmazás nem figyelmeztet téged a frissítésre, akkor ellenőrizd a frissítéseket nagyjából kéthetente, vagy engedélyezd az automatikus frissítést.</p>
+            <p>Ha nem frissíted a készülékeidet és alkalmazásaidat, akkor egy esetleges sérülékenységet, amit még nem javítottak ki, azt aktívan kihasználhatja egy támadó, ami azt jelenti, hogy egy támadó felhasználhatja őket egy eszköz feltörésére.</p>
+            <p>A tény, hogy feltétlenül telepíteni kell az összes biztonsági frissítést, miután azok elérhetővé válnak. A szoftverfrissítések mindennapos és néha bosszantó részei modern technológiai életünknek, de mindig fontos, hogy ne hagyjuk figyelmen kívül a frissítéseket.</p>
+            <p>Vállalati környezetben a frissítéseket a legtöbb esetben központilag végzik, azaz nem neked kell manuálisan frissítened az eszközeidet és alkalmazásaidat, egyszerűen csak kövesd a vállalati követelményeket, amik a legtöbbször:</p>
+            <ul>
+                <li>Kapcsold ki a laptopod minden este, hogy a javítások és frissítések végbemehessen</li>
+                <li>Cseréld le régi laptopjaid és eszközeid, ha a vállalati eszközökért felelős csoport arra kér</li>
+                <li>Csak jóváhagyott alkalmazásokat és hardvereket használj - a nem jóváhagyott alkalmazások, szoftverek és hardvereszközök lehet, hogy nem a legújabb frissítésekkel vannak ellátva, lehetnek benne olyan sebezhetőségek, amelyeket egy támadó sikeresen kihasználhat.</li>
+            </ul>
+
+            <h5>További megelőző lépések</h5>
+
+            <p>A vírusvédelmi rendszer telepítésén és a rendszeres frissítések alkalmazásán túl további megelőző lépéseket is megtehetsz, hogy elkerült a vírusfertőzéseket.</p>
+            <p>Ne nyiss meg spam vagy phishing e-maileket, ha azokban csatolmány is van, azokat semmi esetben se töltsd le vagy nyisd meg. Körültekintően engedélyezz csak a másoktól kapott excel fájlokban a makrókat.</p>
+            <p>Készíts biztonsági mentéseket, amiket egy külön helyen tárolsz (külső adattároló, felhő alapú tárhely), így, ha meg is fertőződik az eszközöd, a dokumentumaid nem fognak elveszni.</p>
+            <p>Ne dugj be ismeretlen forrásból származó hordozható eszközt a számítógépbe.</p>
+
+            <h4>Incidens kezelése</h4>
+
+            <p>Ha már megtörtént a baj, a számítógépvírusok és kémprogramok eltávolítása nehéz lehet, de az incidens kezelése előtt fontos tisztázni, hogy mi is az az incidens. </p>
+            <p>Az informatikában három olyan kifejezés is létezik, amelyek néha egymással felcserélhetően használatosak, de különböző dolgokat jelentenek:</p>
+            <ol type="1">
+                <li>Az események olyan ártalmatlan műveletek, amelyek gyakran megtörténnek. Eseménynek számít például egy fájl létrehozása, egy mappa törlése vagy egy e-mail megnyitása. Egy esemény önmagában általában nem jelent biztonsági incidenst, de más eseményekkel párosítva valamilyen fenyegetést jelezhet.</li>
+                <li>A riasztások olyan események által kiváltott értesítések, amelyek vagy fenyegetések, vagy nem.</li>
+                <li>Az incidensek olyan, egymással összefüggő riasztások csoportja, amelyekről emberek vagy automatizálási eszközök megállapították, hogy valószínűleg valódi fenyegetések. Önmagukban egyik riasztás sem tűnhet jelentős fenyegetésnek, de együttes jelenlétük lehetséges biztonsági incidensre utalnak.</li>
+            </ol>
+            <p>A leggyakoribb gyanús esetek, amiből észreveheted, ha megfertőződött az eszközöd:</p>
+            <ul>
+                <li>a számítógéped gyakran összeomlik</li>
+                <li>a számítógéped jelentősen lelassult</li>
+                <li>a böngésző rendellenesen viselkedik</li>
+                <li>a szabad tárhelyed számottevően kevesebb, mint amire emlékszel</li>
+                <li>a vírusvédelmi rendszer az eszközödön gyanús tevékenységet jelez</li>
+            </ul>
+            <p>Ha gyanús esemény észlelsz, végezd el a következő védelmi intézkedéseket:</p>
+            <ol type="1">
+                <li>Kapcsold le az eszközt a hálózatról. Húzd ki az internet kábelt vagy kapcsold le a Wi-Fi-t, hogy a vírus ne terjedhessen tovább.</li>
+                <li>Ne használj külső adattárolót. Ne csatlakoztass pendrive-ot vagy külső merevlemezt, mert ezek is megfertőződhetnek, és a kártékony szoftver átmásolódhat rájuk.</li>
+                <li>Használj vírusirtó szoftvert. Futtass teljes rendszervizsgálatot egy megbízható vírusirtó segítségével, hogy eltávolítsd a rosszindulatú programot.</li>
+                <li>Ha a vírusvédelmi szoftvered nem vezet eredményre, formázd a meghajtót, és telepítsd újra az operációs rendszert a számítógépen, telefon esetén állítsd vissza a gyári beállításokat.</li>
+                <li>Ellenőrizd a hálózat többi eszközét. Győződj meg róla, hogy más csatlakoztatott eszközök is biztonságban vannak, és nem fertőződtek meg.</li>
+                <li>Zsarolóvírus (ransomware) esetén soha ne fizess, mert semmi nem garantálja, hogy visszakapod a fájljaidat.</li>
+            </ol>
+            <p>Ha a vállalati eszközeiden tapasztalsz ilyen gyanús eseményeket és vírusfertőzésre gyanakszol, minden esetben jelentsd azt a vállalati követelményeknek megfelelő módon az informatikai csoportnak.</p>
 
 
             <div class="button">
