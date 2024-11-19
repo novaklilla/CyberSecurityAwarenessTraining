@@ -156,6 +156,57 @@
             background-color: #34495e;
         }
 
+        /* Gallery and modal styles */ 
+        .gallery { 
+        display: flex; 
+        justify-content: center; 
+        gap: 10px; 
+        margin-top: 20px; 
+        }
+
+        .gallery img {
+        height: 150px;
+        width: auto;
+        cursor: pointer;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        }
+
+        .gallery img:hover {
+        border-color: #555;
+        }
+
+        .modal { 
+        display: none; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        background: rgba(0, 0, 0, 0.8); 
+        justify-content: center; 
+        align-items: center; 
+        }
+
+        .modal img { 
+        max-width: 90%; 
+        max-height: 90%; 
+        border-radius: 10px; 
+        }
+
+        .modal:target { 
+        display: flex; 
+        }
+
+        .modal a { 
+        position: absolute; 
+        top: 20px; 
+        right: 20px; 
+        color: white; 
+        text-decoration: none; 
+        font-size: 24px; 
+        }
+
     </style>
 </head>
 <body>
@@ -354,7 +405,15 @@
             <h5>Példa befektetési és kriptovalutákkal kapcsolatos csalásra</h5>
 
             <p>2024 elején Gundel Takács Gábor nevével éltek vissza, felhasználva azt egy ilyen kriptovalutás csaláshoz. A képen is látható, hogy egy hamis Index cikkben írtak arról, hogyan „szólta el magát” a híresség, ezzel még inkább felkeltve az érdeklődésedet.</p>
-            <img src="path_to_image" alt="Hamis Index cikk Gundel Takács Gáborról">
+
+            <div class="gallery">
+                <a href="#img1"><img src="pictures/internet-and-emails-01_investment-and-cryptocurrency-scam-example.png" alt="Image 1"></a>
+            </div>
+              
+            <div id="img1" class="modal">
+                <a href="#">×</a>
+                <img src="pictures/internet-and-emails-01_investment-and-cryptocurrency-scam-example.png" alt="Large Image 1">
+            </div>
 
             <h5>Milyen veszélyei vannak a befektetési és kriptovalutákkal kapcsolatos csalásoknak?</h5>
 
