@@ -47,6 +47,10 @@
         <!-- Right side main content -->
         <div class="content" id="content">
 
+            <div class="table-of-contents" id="table-of-contents">
+                <h1>Tartalomjegyzék</h1>
+            </div>
+
             <h1>Biztonságos internet- és e-mail használat</h1>
 
             <h2>Nyilvános Wi-Fi Hálózatok</h2>
@@ -145,7 +149,7 @@
             <p>Világszerte naponta több ezer képet és tartalmat osztunk meg a közösségi médiában. Ezekkel a posztokkal gyakran az a célunk, hogy kapcsolatban maradjunk ismerőseinkkel, megosszuk életünk fontos pillanatait, és később visszaemlékezhessünk rájuk. Azonban rendkívül fontos, hogy tisztában legyünk azzal, milyen információkat osztunk meg magunkról, és hogy ezeket kik láthatják.</p>
             <p>Amit egyszer feltöltünk az internetre, az gyakorlatilag ott is marad. Az online térben nagyon nehéz egy tartalmat véglegesen eltüntetni, mert azokat mások letölthetik, újra megoszthatják, vagy különböző adatbázisokban megőrizhetik. Ezért a közösségi médiában és az internet egyéb területein megosztott információink formálják azt, amit "digitális lábnyomnak" nevezünk.</p>
             <p>A digitális lábnyom nemcsak azokat a tartalmakat foglalja magába, amelyeket szándékosan megosztunk, hanem az összes online tevékenységünket. Ide tartoznak például:</p>
-            <ul>
+            <ol>
                 <li>A közösségi médiában közzétett képek, bejegyzések</li>
                 <li>Az interakcióink mások tartalmaival, like-ok, kommentek</li>
                 <li>Követett oldalak és személyek</li>
@@ -154,7 +158,7 @@
                 <li>E-mailek és azonnali üzenetek</li>
                 <li>Az online platformokon történő bejelentkezéseink</li>
                 <li>Elektronikus útlevél használata</li>
-            </ul>
+            </ol>
             <p>A digitális lábnyomunk nyomán egy átfogó képet lehet kialakítani rólunk – személyes érdeklődési körünkről, szokásainkról, tartózkodási helyeinkről és még sok egyébről. Ha nem vigyázunk az adatainkra, akkor ezek az információk rossz kezekbe kerülhetnek, és visszaélhetnek velük, akár marketingcélokra, akár csalárd célokra. A digitális lábnyom „takarítása” nagyon fontos lépés, amikor is töröljük a felesleges online tartalmainkat, frissítjük adatvédelmi beállításainkat, és körültekintőbben osztunk meg információkat a jövőben.</p>
 
             <h4>Példa a veszélyekre</h4>
@@ -311,14 +315,14 @@
             <p>Az álhírek olyan dezinformáló tartalmak, amelyek hamis információkat közölnek, szándékosan félrevezetve a közönséget.</p>
             <p>Az álhíreknek több fajtája van, melyeknek a közös jellemzői, hogy mindegyik figyelemfelhívó, túlzó címeket ad (pl. EZT NEM HISZED EL…, NAGYON DURVÁN KITÁLALT/BESZÓLT…!!!!, Meghalt egy ember. Kínok között, üvöltve…) és minden esetben a megosztásra buzdítanak.</p>
             <p>Az álhírek különböző formákban jelenhetnek meg, mint például:</p>
-            <ul>
+            <ol>
                 <li>Kitalált hírek: Teljesen fiktív információk, amelyek nem alapulnak valós eseményeken.</li>
                 <li>Kattintásvadász cikkek: Olyan cikkek, amelyek célja a kattintások maximalizálása, gyakran félrevezető címekkel.</li>
                 <li>Politikailag elfogult tartalmak: Olyan hírek, amelyek politikai célok szolgálatában állnak, és manipulálják az olvasók véleményét.</li>
                 <li>Áltudományos cikkek: Tudományosnak tűnő, de valójában megalapozatlan állítások.</li>
                 <li>Konteós cikkek: Olyan írások, amelyek különféle összeesküvés-elméleteket népszerűsítenek.</li>
                 <li>Szatirikus anyagok: Olyan cikkek, amelyek szórakoztatási céllal készültek, de könnyen félreérthetők.</li>
-            </ul>
+            </ol>
             <p>A csalók különböző módszerekkel és eszközökkel nyerészkedhetnek az álhírek terjesztése közben.</p>
             <p>Az álhíroldalakon elhelyezett reklámok kattintások után bevételt termelnek. A csalók olyan tartalmakat használnak, amelyek sok látogatót vonzanak, így növelve a reklámok megtekintéseit és kattintásait. Néhány csaló affiliate marketing programokat használ, ahol a hirdetésekre történő kattintások vagy vásárlások után jutalékot kapnak.</p>
 
@@ -362,6 +366,37 @@
         function topFunction() {
             contentDiv.scroll({ top: 0, behavior: "smooth" }); // Smooth scroll to top
         }
+
+
+        // Automatic table of contents generation
+        document.addEventListener('DOMContentLoaded', function () {
+            const content = document.getElementById('content');
+            const toc = document.getElementById('table-of-contents');
+
+            const headers = content.querySelectorAll('h2, h3, h4');
+            headers.forEach(header => {
+                // Leave "Tartalomjegyzék" out
+                if (header.textContent.trim().toLowerCase() === 'tartalomjegyzék') {
+                    return;
+                }
+
+                const link = document.createElement('a');
+                const id = header.textContent.replace(/\s+/g, '-').toLowerCase();
+                header.id = id;
+                link.href = `#${id}`;
+                link.textContent = header.textContent;
+
+                // Defining the levels based on the header tags
+                const level = parseInt(header.tagName[1], 10); // h2 = 2, h3 = 3, stb.
+
+                // Only applying indentation from H3 and below
+                if (level > 2) {
+                    link.style.marginLeft = `${(level - 2) * 20}px`;
+                }
+
+                toc.appendChild(link);
+            });
+        });
     </script>
 
 </body>

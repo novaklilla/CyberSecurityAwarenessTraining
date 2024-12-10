@@ -94,7 +94,6 @@ hr {
 ul,ol {
     margin: 0;
     padding-left: 20px;
-    list-style-type: none;
     font-family: Arial, sans-serif;
     font-size: 1.2em;
     color: #34495e;
@@ -108,7 +107,6 @@ li {
 }
 
 li::before {
-    content: "•";
     color: #2c3e50;
     font-size: 1.2em;
     margin-right: 8px;

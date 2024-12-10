@@ -47,6 +47,10 @@
         <!-- Right side main content -->
         <div class="content" id="content">
 
+            <div class="table-of-contents" id="table-of-contents">
+                <h1>Tartalomjegyzék</h1>
+            </div>
+
             <h1>Bevezetés</h1>
             
             <p>A mai világban már nem csak fizikai, de a digitális térben is védekeznünk kell a rosszakarók, csalók és bűnözők ellen.</p>
@@ -119,6 +123,37 @@
         function topFunction() {
             contentDiv.scroll({ top: 0, behavior: "smooth" }); // Smooth scroll to top
         }
+
+
+        // Automatic table of contents generation
+        document.addEventListener('DOMContentLoaded', function () {
+            const content = document.getElementById('content');
+            const toc = document.getElementById('table-of-contents');
+
+            const headers = content.querySelectorAll('h2, h3, h4');
+            headers.forEach(header => {
+                // Leave "Tartalomjegyzék" out
+                if (header.textContent.trim().toLowerCase() === 'tartalomjegyzék') {
+                    return;
+                }
+
+                const link = document.createElement('a');
+                const id = header.textContent.replace(/\s+/g, '-').toLowerCase();
+                header.id = id;
+                link.href = `#${id}`;
+                link.textContent = header.textContent;
+
+                // Defining the levels based on the header tags
+                const level = parseInt(header.tagName[1], 10); // h2 = 2, h3 = 3, stb.
+
+                // Only applying indentation from H3 and below
+                if (level > 2) {
+                    link.style.marginLeft = `${(level - 2) * 20}px`;
+                }
+
+                toc.appendChild(link);
+            });
+        });
     </script>
 
 </body>

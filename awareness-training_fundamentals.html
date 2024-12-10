@@ -47,6 +47,10 @@
         <!-- Right side main content -->
         <div class="content" id="content">
 
+            <div class="table-of-contents" id="table-of-contents">
+                <h1>Tartalomjegyzék</h1>
+            </div>
+
             <h1>Alapvető biztonsági fogalmak</h1>
 
             <h2>Hitelesítés</h2>
@@ -133,11 +137,11 @@
             <p>Az a többtényezős hitelesítés, amikor a korábban említett hitelesítési típusok közül (jelszó alapú, biometrikus, token alapú, stb.) többet is alkalmazunk egyszerre.</p>
             <p><b>A kétfaktoros hitelesítés a többtényezős hitelesítésnek az a típusa, amely két hitelesítési formát követel meg.</b></p>
             <p>A fiókfeltörések megakadályozásának egyik legjobb módja, ha legalább két hitelesítési módszert követel meg a folyamat, amelyek között a korábban felsorolt módszerek bármelyike szerepelhet. Hatékony megoldás, ha az alábbiak közül bármelyik két dolgot követeljük meg:</p>
-            <ul>
+            <ol>
                 <li>Valami, amit a felhasználó ismer, általában egy jelszó</li>
                 <li>Valami, aminek a felhasználó a birtokában van, például egy nem könnyen duplikálható, megbízható eszköz (telefon)</li>
                 <li>Valami, ami a felhasználó jellemzője, például ujjlenyomat- vagy arcszkennelés</li>
-            </ul>
+            </ol>
             <p>Például amellett, hogy jelszót (valami, amit a felhasználó ismer) használunk, egy egyszeri jelszavas hitelesítést is beállítunk, azaz egy kódot kapunk SMS-ben egy megbízható eszközre (valami, aminek a felhasználó a birtokában van), mielőtt engedélyezné a hozzáférést a rendszer vagy alkalmazás.</p>
             <p>Ha azonban valaki más megpróbál bejelentkezni azt tettetve, hogy te vagy, akkor meg kell adnia a felhasználóneved, jelszavad, és amikor a rendszer rákérdez a második tényezőre, elakad! Hacsak nincs nálunk a te telefonod, nem tudják bevinni azt a hatjegyű számot. A kétfaktoros authentikációs alkalmazásod 6 jegyű száma pedig 30 másodpercenként változik, így még ha a támadó tudja is a tegnapi bejelentkezéshez használt számot, akkor is kizárja őt a rendszer.</p>
 
@@ -150,13 +154,13 @@
             <h3>Miért hasznos a kétfaktoros hitelesítés?</h3>
 
             <p>Számos jelszó kompromittálódási vagy támadási forgatókönyv létezik, amelyek megszemélyesítéshez vezethetnek, amikor is a támadó egy másik felhasználó digitális személyazonosságát használja, hogy jogosulatlan hozzáférést szerezzen:</p>
-            <ul>
+            <ol>
                 <li>Social engineering vagy adathalászat, amelynek során a felhasználó véletlenül érzékeny bejelentkezési adatokat, például a felhasználónevét és jelszavát adja át a támadónak.</li>
                 <li>A jelszófeltörés egy olyan módszer, amikor a támadó (gyakran egy program segítségével) újra és újra megpróbál bejelentkezni különböző jelszavakkal, amíg meg nem találja a helyeset. Ezt brute force-támadásnak nevezik, ami azt jelenti, hogy a támadó próbálgatással találja meg a megfelelő jelszót. Ha a támadónak erős számítógépe van és a rendszer nem tiltja le a sok sikertelen próbálkozást, ez a módszer elvileg mindig sikeres lehet.</li>
                 <li>Adversary-in-the-Middle (AiTM), Man-in-the-Middle (MitM) és Man-in-the-Browser (MitB), amikor a felhasználó és a bejelentkező szolgáltatás közötti kommunikációt rögzítik, vagy a felhasználó billentyűleütéseit rögzítik (egy billentyűnaplózó segítségével), ami a jelszó megszerzését eredményezheti.</li>
                 <li>Jelszó újrafelhasználása, amikor a dark weben elérhető felhasználónév és jelszó kombinációkat használnak a rendszerekbe való bejelentkezési kísérlethez.</li>
                 <li>Az áldozat eszközére helyileg telepített rosszindulatú szoftverek potenciálisan rögzíthetik és továbbíthatják a felhasználói adatokat, beleértve a jelszavakat is.</li>
-            </ul>
+            </ol>
             <p>A fiókfeltörés kockázatának csökkentéséhez a legfontosabb, hogy kapcsold be a többtényezős hitelesítést, és kérj legalább két hitelesítési tényezőt. A támadóknak sokkal nehezebb dolguk van, ha egynél több módszert kell megszerezniük, különösen, ha az egyik biometrikus adat vagy egy eszköz, amit te használsz, például a telefonod.</p>
 
             <h3>Milyen veszélyek vannak a kétfaktoros hitelesítésnek?</h3>
@@ -245,6 +249,37 @@
         function topFunction() {
             contentDiv.scroll({ top: 0, behavior: "smooth" }); // Smooth scroll to top
         }
+
+
+        // Automatic table of contents generation
+        document.addEventListener('DOMContentLoaded', function () {
+            const content = document.getElementById('content');
+            const toc = document.getElementById('table-of-contents');
+
+            const headers = content.querySelectorAll('h2, h3, h4');
+            headers.forEach(header => {
+                // Leave "Tartalomjegyzék" out
+                if (header.textContent.trim().toLowerCase() === 'tartalomjegyzék') {
+                    return;
+                }
+
+                const link = document.createElement('a');
+                const id = header.textContent.replace(/\s+/g, '-').toLowerCase();
+                header.id = id;
+                link.href = `#${id}`;
+                link.textContent = header.textContent;
+
+                // Defining the levels based on the header tags
+                const level = parseInt(header.tagName[1], 10); // h2 = 2, h3 = 3, stb.
+
+                // Only applying indentation from H3 and below
+                if (level > 2) {
+                    link.style.marginLeft = `${(level - 2) * 20}px`;
+                }
+
+                toc.appendChild(link);
+            });
+        });
     </script>
 
 </body>
